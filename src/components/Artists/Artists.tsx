@@ -1,13 +1,22 @@
-import { useSelector } from "react-redux";
-import { useGetArtistsQuery } from "../../redux/artists/artistsApi";
-import { selectPagination } from "../../redux/pagination/paginationSlice";
+import css from "./Artists.module.css";
+import ArtistsList from "./ArtistsList/ArtistsList";
+import Pagination from "../Pagination/Pagination";
+
+export type ReducedArtist = {
+  _id: string;
+  genres: string[];
+  strArtist: string;
+  strBiographyEN: string;
+  strArtistThumb: string;
+};
 
 const Artists = () => {
-  const pagination = useSelector(selectPagination);
-  const { data, isFetching, error } = useGetArtistsQuery(
-    new URLSearchParams(pagination.toString())
+  return (
+    <section className={css.artists}>
+      <ArtistsList />
+      <Pagination />
+    </section>
   );
-  return <section></section>;
 };
 
 export default Artists;

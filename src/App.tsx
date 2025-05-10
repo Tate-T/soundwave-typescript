@@ -12,7 +12,7 @@ import "./reset.css";
 function App() {
   return (
     <>
-      <ArtistsInfo _id="kakakak"/>
+      {/* <ArtistsInfo _id="kakakak"/> */}
       <Header />
       <Hero />
       <Artists />
