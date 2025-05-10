@@ -1,5 +1,7 @@
 const Artist = () => {
-  return <footer></footer>;
+  return <li>
+    
+  </li>;
 };
 
 export default Artist;
