@@ -12,14 +12,14 @@ import "./reset.css";
 function App() {
   return (
     <>
-      {/* <ArtistsInfo _id="kakakak"/>
-      <Header /> */}
+      <ArtistsInfo _id="kakakak"/>
+      <Header />
       <Hero />
-      {/* <Artists />
+      <Artists />
       <Banners />
       <Feedback />
       <Reviews />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
