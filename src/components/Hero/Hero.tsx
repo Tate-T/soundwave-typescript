@@ -1,28 +1,55 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Play, Pause } from 'lucide-react'
 import css from './Hero.module.css'
 import popStar from '../../images/hero/girlPopStar.png'
 
-
-
 const Hero = () => {
 	const audioRef = useRef<HTMLAudioElement>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
+	const [duration, setDuration] = useState(0)
+	const [currentTime, setCurrentTime] = useState(0)
 
+	const togglePlay = () => {
+		const audio = audioRef.current
+		if (!audio) return
 
-const togglePlay = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
+		if (isPlaying) {
+			audio.pause()
+		} else {
+			audio.play().catch(e => {
+				console.error("Playback failed:", e)
+			})
+		}
+		setIsPlaying(!isPlaying)
+	}
 
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play();
-    }
+	const handleTimeUpdate = () => {
+		const audio = audioRef.current
+		if (audio) {
+			setCurrentTime(audio.currentTime)
+		}
+	}
 
-    setIsPlaying(!isPlaying);
-  };
+	const handleLoadedMetadata = () => {
+		const audio = audioRef.current
+		if (audio) {
+			setDuration(audio.duration)
+		}
+	}
 
+	const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const audio = audioRef.current
+		if (audio) {
+			audio.currentTime = Number(e.target.value)
+			setCurrentTime(Number(e.target.value))
+		}
+	}
+
+	const formatTime = (time: number) => {
+		const minutes = Math.floor(time / 60)
+		const seconds = Math.floor(time % 60)
+		return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`
+	}
 
 	return (
 		<section className={css.sectionHero}>
@@ -40,13 +67,28 @@ const togglePlay = () => {
 			</div>
 			<div className={css.cardTwo}>
 				<div className={css.audioPlayer}>
-					<audio ref={audioRef} src="./musucpidmanula.mp3" preload='metadata'  />
-					<button onClick={togglePlay} id="playPauseBtn">{isPlaying ? <Pause size={20} /> : <Play size={20} />}</button>
-					<input type="range" id="seekBar" value="0" />
-					<span id="currentTime">0:00</span>
-					<span id="duration"> 00</span>
+					<audio
+						ref={audioRef}
+						src="/musicpidmanula.mp3"
+						preload="metadata"
+						onTimeUpdate={handleTimeUpdate}
+						onLoadedMetadata={handleLoadedMetadata}
+					/>
+					<button onClick={togglePlay} id="playPauseBtn">
+						{isPlaying ? <Pause size={20} /> : <Play size={20} />}
+					</button>
+					<input
+						type="range"
+						id="seekBar"
+						min="0"
+						max={duration}
+						value={currentTime}
+						onChange={handleSeek}
+					/>
+					<span id="currentTime">{formatTime(currentTime)}</span>
+					<span id="duration"> / {formatTime(duration)}</span>
 				</div>
-				<img alt="awd" className={css.imgpopStar} src={popStar}></img>
+				<img alt="pop star" className={css.imgpopStar} src={popStar} />
 			</div>
 		</section>
 	)
