@@ -1,15 +1,18 @@
+import { useEffect } from 'react';
 import css from './Feedback.module.css';
 
 const Feedback = () => {
-  const ics = document.querySelectorAll('#rating>svg>path');
-  console.log(ics)
+  let ics: SVGPathElement[] = [];
+  useEffect(():void => {
+    ics = Array.from(document.querySelectorAll<SVGPathElement>('#rating > svg > path'));
+    console.log(ics)
+  }, []);
   const addRating = (e: React.MouseEvent<HTMLElement>): void => {
     const el = e.target as HTMLElement;
     const rating: number = Number(el.closest('button')?.dataset?.rating);
-    console.log(rating);
-    // for (let i=0;i<=rating;i++){
-    //   (ics[i] as HTMLElement).style.fill = 'rgb(254, 200, 75)'
-    // }
+    ics.forEach((ic: SVGPathElement, idx: number):void => {
+      ic.style.fill = idx+1<=rating*2 ? 'rgb(254, 200, 75)' : '#515151';
+    });
   }
   return (<section className={css.feedback}>
     <div className={css.part1}>
