@@ -1,0 +1,54 @@
+.feedback{
+    display: flex;
+    gap: 16px;
+}
+.part1{
+    width: 696px;
+    height: 535px;
+    border-radius: 42px;
+    background: rgb(25, 25, 25);
+}
+.banner{
+    width: 696px;
+    height: 535px;
+}
+.part2{
+    width: 696px;
+    height: 535px;
+    border-radius: 42px;
+    background: rgb(25, 25, 25);
+    padding: 64px 171px;
+}
+.subtitle{
+    color: rgb(247, 247, 247);
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -1%;
+    text-align: left;
+}
+.desc{
+
+}
+.feedbackForm{
+
+}
+.ratingCont{
+
+}
+.placehold{
+
+}
+.ratingBut{
+
+}
+.nameInput{
+
+}
+.commentInput{
+
+}
+.sendBut{
+
+}
