@@ -1,4 +1,4 @@
 const Pagination = () => {
-  return <></>;
+  return <div></div>;
 };
 export default Pagination;

@@ -1,0 +1,5 @@
+.artists {
+  display: flex;
+  align-items: center;
+  gap: 28px 48px;
+}
