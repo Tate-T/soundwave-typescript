@@ -1,6 +1,7 @@
 .feedback{
     display: flex;
     gap: 16px;
+    font-family: Urbanist;
 }
 .part1{
     width: 696px;
@@ -21,21 +22,29 @@
 }
 .subtitle{
     color: rgb(247, 247, 247);
-    font-family: Urbanist;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
     letter-spacing: -1%;
-    text-align: left;
 }
 .desc{
-
+    margin-top: 16px;
+    color: var(--text-secondary-color);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -1%;
 }
 .feedbackForm{
-
+    margin-top: 32px;
 }
 .ratingCont{
-
+    width: 185px;
+    height: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14;
+    padding: 0px;
 }
 .placehold{
 
