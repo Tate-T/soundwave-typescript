@@ -61,7 +61,7 @@ const Hero = () => {
 					<span id="currentTime">0:00</span>
 					<span id="duration">4:38</span>
 				</div>
-				<img alt="awd" className={css.imgpopStar} src={popStar}></img>
+				{/* <img alt="awd" className={css.imgpopStar} src={popStar}></img> */}
 			</div>
 		</section>
 	)
