@@ -1,5 +1,17 @@
 .artists {
-  display: flex;
+  width: 100%;
+  display: grid;
+  font-family: Urbanist;
+  justify-items: center;
   align-items: center;
-  gap: 28px 48px;
+  gap: 26px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 48px 28px;
+  }
 }

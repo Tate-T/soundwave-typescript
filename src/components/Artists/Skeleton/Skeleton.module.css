@@ -1,0 +1,88 @@
+@keyframes wave {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+.artists {
+  width: 100%;
+  display: grid;
+  font-family: Urbanist;
+  justify-items: center;
+  align-items: center;
+  gap: 26px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 48px 28px;
+  }
+}
+
+.artist {
+  padding: 20px;
+  color: var(--text-color);
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.04);
+  height: 400px;
+  width: 307px;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in-out;
+}
+.artistImg {
+  width: 267px;
+  height: 211px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: wave 2s infinite linear;
+}
+.artistList {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: wave 2s infinite linear;
+  width: 182px;
+  height: 17px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+.artistTitle {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: wave 2s infinite linear;
+  height: 22px;
+  width: 123px;
+  border-radius: 4px;
+}
+
+.artistBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 123px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: wave 2s infinite linear;
+}
+
+.artistDescription {
+  margin-top: 10px;
+  width: 267px;
+  height: 82px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: wave 2s infinite linear;
+}
