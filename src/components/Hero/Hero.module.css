@@ -6,14 +6,34 @@
 }
 
 .cardOne {
+	padding-top: 251px;
+	padding-left: 48px;
 	border-radius: 42px;
 	background: #191919;
 	border: solid 1px red;
 	height: 868px;
 	width: 696px;
 }
+.audioPlayer {
+	justify-content: center;
+	align-items: center;
+	display: flex;
 
+	width: 294px;
+	height: 68px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(12.600000381469727px);
+	position: absolute;
+	top: 701px;
+	left: 54px;
+	z-index: 5;
+}
 .cardTwo {
+	position: relative;
+
 	background: linear-gradient(
 		180deg,
 		rgba(253, 255, 97, 0.31) 0%,
@@ -27,5 +47,41 @@
 	height: 868px;
 }
 .imgpopStar {
+	z-index: 4;
+	position: absolute;
 	bottom: 0;
+}
+
+.title {
+	color: #f7f7f7;
+	font-family: Urbanist;
+	font-size: 90px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 80px;
+	letter-spacing: -2.7px;
+
+	width: 431px;
+}
+
+.titleSpan {
+	color: #fdff61;
+	font-family: Urbanist;
+	font-size: 90px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 80px;
+	letter-spacing: -2.7px;
+}
+
+.titleTxt {
+	width: 431px;
+	color: rgba(247, 247, 247, 0.8);
+	margin-top: 40px;
+	font-family: Urbanist;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.16px;
 }
