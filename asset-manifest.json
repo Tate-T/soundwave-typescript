@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/soundwave-typescript/static/css/main.8369cbbe.css",
+    "main.js": "/soundwave-typescript/static/js/main.a84962c2.js",
+    "static/media/girlPopStar.png": "/soundwave-typescript/static/media/girlPopStar.df7d68844f9c79386a79.png",
+    "index.html": "/soundwave-typescript/index.html",
+    "main.8369cbbe.css.map": "/soundwave-typescript/static/css/main.8369cbbe.css.map",
+    "main.a84962c2.js.map": "/soundwave-typescript/static/js/main.a84962c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8369cbbe.css",
+    "static/js/main.a84962c2.js"
+  ]
+}
