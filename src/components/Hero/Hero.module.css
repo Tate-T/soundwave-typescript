@@ -1,0 +1,31 @@
+.sectionHero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.cardOne {
+	border-radius: 42px;
+	background: #191919;
+	border: solid 1px red;
+	height: 868px;
+	width: 696px;
+}
+
+.cardTwo {
+	background: linear-gradient(
+		180deg,
+		rgba(253, 255, 97, 0.31) 0%,
+		rgba(25, 25, 25, 0.26) 100%
+	);
+
+	backdrop-filter: blur(4.5px);
+	border-radius: 42px;
+	width: 696px;
+	border: solid 1px red;
+	height: 868px;
+}
+.imgpopStar {
+	bottom: 0;
+}

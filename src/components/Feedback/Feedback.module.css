@@ -1,0 +1,63 @@
+.feedback{
+    display: flex;
+    gap: 16px;
+    font-family: Urbanist;
+}
+.part1{
+    width: 696px;
+    height: 535px;
+    border-radius: 42px;
+    background: rgb(25, 25, 25);
+}
+.banner{
+    width: 696px;
+    height: 535px;
+}
+.part2{
+    width: 696px;
+    height: 535px;
+    border-radius: 42px;
+    background: rgb(25, 25, 25);
+    padding: 64px 171px;
+}
+.subtitle{
+    color: rgb(247, 247, 247);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -1%;
+}
+.desc{
+    margin-top: 16px;
+    color: var(--text-secondary-color);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -1%;
+}
+.feedbackForm{
+    margin-top: 32px;
+}
+.ratingCont{
+    width: 185px;
+    height: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14;
+    padding: 0px;
+}
+.placehold{
+
+}
+.ratingBut{
+
+}
+.nameInput{
+
+}
+.commentInput{
+
+}
+.sendBut{
+
+}
