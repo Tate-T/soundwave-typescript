@@ -2,7 +2,7 @@ import css from "./Header.module.css";
 import Container from "../Common/Container/Container";
 const Header = () => {
   return (
-    <Container>
+    // <Container>
       <header>
         <a className={css.header_logo}>
           <svg
@@ -105,7 +105,7 @@ const Header = () => {
           </ul>
         </div>
       </header>
-    </Container>
+    // </Container>
   );
 };
 

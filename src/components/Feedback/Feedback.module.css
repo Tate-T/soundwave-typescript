@@ -43,21 +43,84 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 14;
-    padding: 0px;
+    gap: 14px;
 }
 .placehold{
-
+    color: rgba(247, 247, 247, 0.4);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -1%;
+}
+.ratingButs{
+    width: 128px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 .ratingBut{
-
+    width: 24px;
+    height: 24px;
 }
+/* .ratingBut > svg > path{
+    fill: #fff;
+} */
 .nameInput{
-
+    margin-top: 14px;
+    border: 1px solid rgba(247, 247, 247, 0.2);
+    border-radius: 16px;
+    width: 353px;
+    height: 49px;
+    padding: 15px;
+    background-color: transparent;
+    color: rgba(247, 247, 247, 0.4);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -1%;
+    transition: all .3s;
+    &:valid{
+        border: 1px solid var(--text-secondary-color);
+        color: rgb(247, 247, 247);
+    }
 }
 .commentInput{
-
+    margin-top: 14px;
+    border: 1px solid rgba(247, 247, 247, 0.2);
+    border-radius: 16px;
+    width: 353px;
+    height: 91px;
+    padding: 15px;
+    background-color: transparent;
+    color: rgba(247, 247, 247, 0.4);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -1%;
+    &:valid{
+        border: 1px solid var(--text-secondary-color);
+        color: rgb(247, 247, 247);
+    }
 }
 .sendBut{
-
+    margin-top: 32px;
+    width: 109px;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: rgb(253, 255, 97);
+    color: rgb(25, 25, 25);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -1%;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background: rgb(229, 232, 51);
+    }
 }
