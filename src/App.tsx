@@ -1,4 +1,5 @@
 import "./common.css";
+import ArtistsInfo from "./components/ArtistInfo/ArtistInfo";
 import Artists from "./components/Artists/Artists";
 import Banners from "./components/Banners/Banners";
 import Feedback from "./components/Feedback/Feedback";
@@ -11,6 +12,7 @@ import "./reset.css";
 function App() {
   return (
     <>
+      <ArtistsInfo _id="kakakak"/>
       <Header />
       <Hero />
       <Artists />
