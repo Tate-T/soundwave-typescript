@@ -1,0 +1,23 @@
+.bannerContainer {
+    display: flex;
+    align-items: center;
+    background-color: #ffc107; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .textContainer {
+    flex: 1;
+  }
+  
+  .text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.5;
+  }
