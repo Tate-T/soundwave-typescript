@@ -1,0 +1,11 @@
+body {
+  background-color: var(--bg-secondary-color);
+}
+
+:root {
+  --bg-color: #191919;
+  --bg-secondary-color: #101010;
+  --accent-color: #fdff61;
+  --text-color: #f7f7f7;
+  --text-secondary-color: rgba(247, 247, 247, 0.8);
+}
