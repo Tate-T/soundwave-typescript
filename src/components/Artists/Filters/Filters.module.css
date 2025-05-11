@@ -1,0 +1,52 @@
+.filters {
+  font-family: Urbanist;
+}
+.filtersTitle {
+  color: rgba(247, 247, 247, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  margin-bottom: 16px;
+}
+.filtersBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+.filtersBox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.filtersInput {
+  border-radius: 16px;
+  padding: 15px;
+  padding-right: 35px;
+  background-color: transparent;
+  border: 1px solid rgba(247, 247, 247, 0.1);
+  color: var(--text-color);
+  width: 316px;
+
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.16px;
+
+  &::placeholder {
+    color: rgba(247, 247, 247, 0.5);
+    font-family: Urbanist;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.16px;
+  }
+}
+.filtersSearchIcon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 15px;
+}
