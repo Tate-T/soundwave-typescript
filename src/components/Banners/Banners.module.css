@@ -5,14 +5,25 @@
     margin-right: auto;
     align-items: center;
     padding-top: 50px;
-    border-radius: 25px;
+    border-radius: 42px;
     background-color: var(--accent-color);
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionContainer{
+  height: 1065px;
+}
+.containerImg{
+    width: 1408px;
+    height: 274px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bannerContainer {
-    display: flex;
-    align-items: center;
+    display: flex;  
+    align-items: center;  
     padding: 20px;
     border-radius: 10px;
     max-width: 100%;
@@ -26,6 +37,11 @@
     width: 196px;
     height: 187px;
     border: none
+  }
+
+  .phoneImg{
+    width: 1408;
+    height: 720;
   }
   
   .textContainer {
