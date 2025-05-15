@@ -9,7 +9,7 @@ import clsx from "clsx";
 import { FC, MouseEvent, useMemo, useState } from "react";
 
 enum SortNamesEnum {
-  abs = "A to Z",
+  asc = "A to Z",
   desc = "Z to A",
 }
 
@@ -39,7 +39,9 @@ const OrderDropdown = () => {
     <div className={css.dropdownWrapper}>
       <div className={css.dropdownHeadline} onClick={toggleDropdown}>
         <p className={clsx(css.dropdownText)}>
-          {filters.sortName === "abs" ? SortNamesEnum.abs : SortNamesEnum.desc}
+          {filters.sortName === "asc" || filters.sortName.length === 0
+            ? SortNamesEnum.asc
+            : SortNamesEnum.desc}
         </p>
         <img
           className={clsx(css.dropdownIcon, isOpen && css.dropdownIconRotated)}
@@ -51,10 +53,10 @@ const OrderDropdown = () => {
         <ul className={clsx(css.choices, css.choicesOrder)}>
           <li
             className={css.choicesItem}
-            data-value="abs"
+            data-value="asc"
             onClick={selectOrder}
           >
-            <span className={css.choicesText}>{SortNamesEnum.abs}</span>
+            <span className={css.choicesText}>{SortNamesEnum.asc}</span>
           </li>
           <li
             className={css.choicesItem}
