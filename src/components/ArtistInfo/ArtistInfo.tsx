@@ -1,12 +1,24 @@
 import { FC } from "react";
 import css from "./ArtistInfo.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../../redux/store";
+import {
+  artistsApi,
+  useGetArtistByIdQuery,
+} from "../../redux/artists/artistsApi";
+import closeIcon from "../../images/icons/x.svg";
+import {
+  selectArtistInfoId,
+  toggleArtistInfo,
+} from "../../redux/artists/artistInfoSlice";
+import ArtistInfoSkeleton from "./ArtistInfoSkeleton/ArtistInfoSkeleton";
 
 interface ArtistInfoSchema {
-  _id: string;
+  [key: string]: string;
 }
 
-interface SongSchema {
-  [key: string]: string | null | undefined;
+export interface SongSchema {
+  [key: string]: string | null;
 }
 
 const songsTest: SongSchema[] = [
@@ -28,36 +40,58 @@ const songsTest: SongSchema[] = [
   },
 ];
 
-const ArtistsInfo: FC<ArtistInfoSchema> = ({ _id }) => {
+const ArtistsInfo: FC<ArtistInfoSchema> = () => {
+  const dispatch = useDispatch<AppDispatch>();
+
+  const currentArtistId = useSelector(selectArtistInfoId);
+  const { data, isLoading, error } = useGetArtistByIdQuery(currentArtistId);
+  console.log(isLoading);
+  if (isLoading)
+    return (
+      <>
+        <ArtistInfoSkeleton />
+      </>
+    );
+  if (error) {
+    console.log(error);
+    return <></>;
+  }
+  console.log(data);
+
+  const handleCloseArtistInfo = () => {
+    dispatch(toggleArtistInfo());
+  };
+
   return (
     <div className={css.artistInfoBackdrop}>
       <div className={css.artistInfoModal}>
+        <button
+          type="button"
+          className={css.closeArtistInfoBtn}
+          onClick={handleCloseArtistInfo}
+        >
+          <img src={closeIcon} alt="iconForClose" />
+        </button>
         <img
-          src="https://ftp.goit.study/img/musicbox/artist/strArtistThumb_qvuxvs1347997318.jpg"
+          src={data.strArtistThumb}
           alt="artist_photo"
           className={css.artistInfoImg}
         />
         <div className={css.artistInfoBox}>
-          <h2 className={css.artistInfoName}>U2</h2>
-          <p className={css.artistInfoDescription}>
-            U2 are an Irish rock band from Dublin, formed in 1976. The group
-            consists of Bono (lead vocals and rhythm guitar), the Edge (lead
-            guitar, keyboards, and backing vocals), Adam Clayton (bass guitar),
-            and Larry Mullen Jr. (drums and percussion). Initially rooted in
-            post-punk, U2's musical style has evolved throughout their career,
-            yet has maintained an anthemic quality built on Bono's expressive
-            vocals and the Edge's chiming, effects-based guitar sounds.{" "}
-          </p>
+          <h2 className={css.artistInfoName}>{data.strArtist}</h2>
+          <p className={css.artistInfoDescription}>{data.strBiographyEN}</p>
           <h2 className={css.artistInfoSongsTitle}>Songs</h2>
           <ul className={css.artistsInfoSongsList}>
-            {songsTest.map((song: SongSchema, idx) => {
+            {data.tracksList.map((song: SongSchema, idx: number) => {
               return (
                 <li className={css.artistInfoSongItem}>
                   <p className={css.artistInfoSongNumber}>
                     {idx < 9 ? `0${idx + 1}` : idx + 1}
                   </p>
-                  <h3 className={css.artistInfoSongName}>{song.strTrack}</h3>
-                  <p className={css.artistInfoSongAlbum}>{song.strAlbum}</p>
+                  <div className={css.songNameAndAlbumBox}>
+                    <h3 className={css.artistInfoSongName}>{song.strTrack}</h3>
+                    <p className={css.artistInfoSongAlbum}>{song.strAlbum}</p>
+                  </div>
                   <p className={css.artistInfoSongDuration}>
                     {song.intDuration}
                   </p>
