@@ -40,6 +40,7 @@ const Filters = () => {
             className={css.filtersInput}
             type="text"
             placeholder="Search"
+            defaultValue={filters.name.toString()}
             onChange={updateName}
             ref={nameInputRef}
           />

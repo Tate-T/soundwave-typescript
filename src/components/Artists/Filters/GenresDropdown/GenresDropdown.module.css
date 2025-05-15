@@ -8,6 +8,13 @@
   padding: 15px;
   padding-right: 35px;
   position: relative;
+  width: 311px;
+  @media screen and (min-width: 768px) {
+    width: 183px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 200px;
+  }
 }
 .dropdownText {
   color: rgba(247, 247, 247, 0.5);
@@ -15,7 +22,6 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.16px;
-  width: 200px;
 }
 .dropdownTextSelected {
   color: var(--text-color);

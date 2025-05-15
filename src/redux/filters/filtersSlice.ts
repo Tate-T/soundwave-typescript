@@ -6,7 +6,7 @@ const filtersSlice = createSlice({
   initialState: {
     name: "",
     genre: "",
-    sortName: "abs",
+    sortName: "",
   },
   reducers: {
     setName(state, action) {

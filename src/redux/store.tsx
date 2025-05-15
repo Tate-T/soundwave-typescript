@@ -4,12 +4,26 @@ import { paginationReducer } from "./pagination/paginationSlice";
 import { artistInfoReducer } from "./artists/artistInfoSlice";
 import { filtersReducer } from "./filters/filtersSlice";
 import { genresApi } from "./filters/genreApi";
+import persistReducer from "redux-persist/lib/persistReducer";
+import sessionStorage from "redux-persist/lib/storage/session";
+import { persistStore } from "redux-persist";
+
+const persistConfig = {
+  key: "root",
+  storage: sessionStorage,
+};
+
+const persistedPaginationReducer = persistReducer(
+  persistConfig,
+  paginationReducer
+);
+const persistedFiltersReducer = persistReducer(persistConfig, filtersReducer);
 
 const store = configureStore({
   reducer: {
-    pagination: paginationReducer,
+    pagination: persistedPaginationReducer,
+    filters: persistedFiltersReducer,
     artistInfo: artistInfoReducer,
-    filters: filtersReducer,
     [genresApi.reducerPath]: genresApi.reducer,
     [artistsApi.reducerPath]: artistsApi.reducer,
   },
@@ -18,6 +32,8 @@ const store = configureStore({
       .concat(artistsApi.middleware)
       .concat(genresApi.middleware),
 });
+
+export const persistor = persistStore(store);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

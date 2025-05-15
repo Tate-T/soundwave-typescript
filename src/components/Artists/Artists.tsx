@@ -32,12 +32,13 @@ export type ReducedArtist = {
 const Artists = () => {
   const pagination: PaginationSchema = useSelector(selectPagination);
   const filters: FiltersSchema = useSelector(selectFilters);
-  let params = `page=${pagination.page}&limit=${pagination.limit}&sortName=${filters.sortName}`;
+  let params = `page=${pagination.page}&limit=${pagination.limit}`;
   if (filters.name) params = params + `&name=${filters.name}`;
   if (filters.genre)
     params =
       params + `&genre=${encodeURIComponent(filters.genre.toLowerCase())}`;
-
+  if (filters.sortName.length !== 0)
+    params = params + `&sortName=${filters.sortName}`;
   console.log(params);
   const { data, error, isLoading } = useGetArtistsQuery(params);
   return (
