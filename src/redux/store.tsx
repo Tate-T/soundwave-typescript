@@ -2,15 +2,21 @@ import { configureStore } from "@reduxjs/toolkit";
 import { artistsApi } from "./artists/artistsApi";
 import { paginationReducer } from "./pagination/paginationSlice";
 import { artistInfoReducer } from "./artists/artistInfoSlice";
+import { filtersReducer } from "./filters/filtersSlice";
+import { genresApi } from "./filters/genreApi";
 
 const store = configureStore({
   reducer: {
     pagination: paginationReducer,
     artistInfo: artistInfoReducer,
+    filters: filtersReducer,
+    [genresApi.reducerPath]: genresApi.reducer,
     [artistsApi.reducerPath]: artistsApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(artistsApi.middleware),
+    getDefaultMiddleware()
+      .concat(artistsApi.middleware)
+      .concat(genresApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

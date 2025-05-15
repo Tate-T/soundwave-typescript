@@ -1,0 +1,28 @@
+.artists {
+  font-family: Urbanist;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  border-radius: 22px;
+  background: var(--bg-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-radius: 42px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+.artistsTitle {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,99 @@
+.artist {
+  padding: 20px;
+  color: var(--text-color);
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.04);
+  height: 400px;
+  width: 307px;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in-out;
+  & * {
+    transition-duration: 225ms;
+    transition-delay: 50ms;
+    transition-timing-function: ease-in-out;
+  }
+  &:hover {
+    background-color: var(--accent-color);
+  }
+  &:hover .artistSubtext {
+    color: rgba(25, 25, 25, 0.5);
+  }
+  &:hover .artistTitle {
+    color: var(--bg-color);
+  }
+  &:hover .artistIcon {
+    transform: rotate(0);
+  }
+  &:hover .artistDescription {
+    color: rgba(25, 25, 25, 0.8);
+  }
+}
+.artistImg {
+  width: 267px;
+  height: 211px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.artistList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  gap: 2px 20px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+.artistSubtext {
+  color: #515151;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+.artistTitle {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.18px;
+}
+.artistTitleSeparated {
+  margin-top: 35px;
+}
+.artistBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 123px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artistIcon {
+  width: 22px;
+  height: 22px;
+  transform: rotate(-44deg);
+}
+
+.artistDescription {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  width: 100%;
+  text-wrap: balance;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  -moz-line-clamp: 5;
+  white-space: pre-wrap;
+  margin-top: 10px;
+}

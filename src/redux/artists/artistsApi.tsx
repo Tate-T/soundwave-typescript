@@ -4,10 +4,12 @@ export const artistsApi = createApi({
   reducerPath: "artists",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://sound-wave.b.goit.study/api",
-  }),
+}),
   endpoints: (builder) => ({
-    getArtists: builder.query({ query: (params) => `/artists?${params}` }),
-    getArtistById: builder.query({ query: (id) => `/artists/${id}` }),
+    getArtists: builder.query({
+      query: (params) => `/artists?${params}`,
+    }),
+    getArtistById: builder.query({ query: (id: string) => `/artists/${id}` }),
   }),
 });
 
