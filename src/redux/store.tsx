@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { artistsApi } from "./artists/artistsApi";
 import { paginationReducer } from "./pagination/paginationSlice";
+import { artistInfoReducer } from "./artists/artistInfoSlice";
 
 const store = configureStore({
   reducer: {
     pagination: paginationReducer,
+    artistInfo: artistInfoReducer,
     [artistsApi.reducerPath]: artistsApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

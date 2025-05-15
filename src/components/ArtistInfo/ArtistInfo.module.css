@@ -16,22 +16,99 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 32px;
-  width: 864px;
-  height: 586px;
-  display: flex;
+  /* display: flex;
   align-items: start;
-  justify-content: center;
-  gap: 32px;
+  justify-content: center; */
+  display: flex;
+  /* align-items: start; */
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 16px;
   border-radius: 20px;
   border: 1px solid rgba(253, 255, 97, 0.4);
   background-color: var(--bg-secondary-color);
+  padding: 32px 16px;
+  width: 344px;
+  height: 915px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 32px;
+    width: 705px;
+    height: 665px;
+    gap: 32px;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1200px) {
+    /* display: flex;
+    align-items: start;
+    justify-content: center; */
+    /* padding: 32px; */
+    width: 864px;
+    height: 586px;
+    /* gap: 32px;
+    flex-direction: row; */
+  }
+}
+
+.closeArtistInfoBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+/* 
+  @media screen and (min-width: 1200px) {
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  } */
+
+  & > img {
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* @media screen and (min-width: 1200px) {
+      width: 24px;
+      height: 24px;
+    } */
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .artistInfoImg {
-  width: 237px;
-  height: 237px;
+  width: 312px;
+  height: 228px;
   border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 228px;
+    height: 228px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 237px;
+    height: 237px;
+  }
 }
 
 .artistInfoName {
@@ -51,8 +128,20 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.14px;
-  max-width: 531px;
+  max-width: 312px;
   margin-top: 16px;
+  max-height: 170px;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    max-width: 380px;
+    max-height: 136px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 531px;
+    max-height: 102px;
+  }
 }
 
 .artistInfoSongsTitle {
@@ -68,10 +157,20 @@
 .artistsInfoSongsList {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   gap: 16px;
   margin-top: 16px;
+  max-height: 314px;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 296px;
+  }
 }
 
 .artistInfoSongItem {
@@ -94,6 +193,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.2px;
+  width: 2rem;
 }
 
 .artistInfoSongName {
@@ -103,8 +203,25 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.12px;
-  margin-left: 16px;
-  max-width: 75px;
+  /* margin-left: 16px; */
+  max-height: 14px;
+  text-wrap: balance;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  -moz-line-clamp: 5;
+  white-space: pre-wrap;
+  width: 75px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 127px;
+    max-height: 28px;
+    /* margin-left: 16px; */
+  }
 }
 
 .artistInfoSongAlbum {
@@ -114,8 +231,45 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.1px;
-  margin-left: 24px;
-  margin-right: 76px;
+  /* margin-left: 24px; */
+  /* margin-right: 76px; */
+  width: 60px;
+  max-height: 12px;
+  text-wrap: balance;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  -moz-line-clamp: 5;
+  white-space: pre-wrap;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    /* margin-left: 24px; */
+    /* margin-right: 76px; */
+    width: 109px;
+    max-height: 28px;
+  }
+}
+
+.songNameAndAlbumBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: 16px;
+  }
 }
 
 .artistInfoSongDuration {
@@ -125,8 +279,16 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.12px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .artistInfoMovieLink {
-  margin-left: 76px;
+  margin-left: auto;
 }
