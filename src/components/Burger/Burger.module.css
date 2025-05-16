@@ -1,0 +1,36 @@
+.burger_modal {
+  top: 64px;
+  left: 183px;
+  position: absolute;
+  border-radius: 12px;
+  background: rgb(253, 255, 97);
+  width: 162px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burger_contact_list {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  gap: 10px;
+  display: flex;
+}
+
+.burger_list {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.burger__list_item {
+  margin-top: 16px;
+}
+
+.burger__item_page {
+  color: rgb(16, 16, 16);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}

@@ -1,22 +1,37 @@
+
+
 header {
   z-index: 3;
   position: absolute;
-  display: flex;
+  justify-items: center;
+     display: flex;
   align-items: center;
   top: 32px;
-  width: 1310px;
+
   left: 50%;
   transform: translate(-50%);
+  @media screen and (min-width: 768px) {
+   
+    width: 660px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1310px;
+  }
 }
 
 .header_logo {
+ 
   display: flex;
   align-items: center;
   color: #f7f7f7;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Urbanist;
   font-weight: 700;
   line-height: 29px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+
 }
 
 .header__logo_svg {
@@ -24,28 +39,101 @@ header {
 }
 
 .navigation {
-  margin-left: 100px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+ margin-left: 48px;
+ margin-right: 48px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 0px;
+    margin-left: 100px;
+  }
+  
 }
 
 .navigation_list {
+ 
   display: flex;
+  margin-top: 10px;
   gap: 30px;
+
+ 
 }
 
 .navigation__item_page {
+
+  /* flex-wrap: nowrap; */
   color: #f7f7f7;
   font-family: Urbanist;
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
+
+}
+
+.navigation__item_page::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(253, 255, 97);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute;
+    top: 270%; */
+    left: 0%;
+    opacity: 0;
+    margin-top: 4px;
+    transition: opacity 250ms cubic-bezier(0.215, 0.61, 0.355, 1) 500ms,
+      transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 500ms;
+    /* transform: scaleX(0); */
+  }
+}
+
+.navigation__item_page:hover::after {
+  @media screen and (min-width: 768px) {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.contact__list_svg {
+  border-radius: 50%;
+  
+  background: #FDFF61;
+}
+
+.contact__list_svg:hover {
+  border-radius: 50%;
+  background: rgb(229, 232, 51);
 }
 
 .contact {
-  margin-left: auto;
-  margin-right: 48px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+ margin-left: auto;
+  /* margin-right: 48px; */
+  }
+  
 }
 
 .contact_list {
   display: flex;
   gap: 18px;
+}
+
+
+.burger_button {
+  width: 28px;
+  height: 28px;
+  border: 1PX solid  #FFF;
+  margin-left: 140px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
 }
