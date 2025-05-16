@@ -9,6 +9,8 @@ import Skeleton from "./Skeleton/Skeleton";
 import Filters from "./Filters/Filters";
 import { selectFilters } from "../../redux/filters/filtersSlice";
 import NotFound from "./NotFound/NotFound";
+import { selectArtistInfo } from "../../redux/artists/artistInfoSlice";
+import ArtistsInfo from "../ArtistInfo/ArtistInfo";
 
 type PaginationSchema = {
   page: number;
@@ -32,6 +34,8 @@ export type ReducedArtist = {
 const Artists = () => {
   const pagination: PaginationSchema = useSelector(selectPagination);
   const filters: FiltersSchema = useSelector(selectFilters);
+  const isOpenArtistInfo: boolean = useSelector(selectArtistInfo);
+
   let params = `page=${pagination.page}&limit=${pagination.limit}`;
   if (filters.name) params = params + `&name=${filters.name}`;
   if (filters.genre)
@@ -42,23 +46,26 @@ const Artists = () => {
   console.log(params);
   const { data, error, isLoading } = useGetArtistsQuery(params);
   return (
-    <section className={css.artists}>
-      <Container>
-        <Filters />
-        <h2 className={css.artistsTitle}>Artist</h2>
-        {isLoading && <Skeleton />}
-        {(error || !data) && <p>Error occured</p>}
-        {data?.artists?.length === 0 && <NotFound />}
-        {!error && !isLoading && data?.artists?.length !== 0 && (
-          <ArtistsList artists={data.artists} />
-        )}
-        {!error && !isLoading && data.totalArtists && (
-          <Pagination
-            totalPages={Math.ceil(data.totalArtists / pagination.limit)}
-          />
-        )}
-      </Container>
-    </section>
+    <>
+      <section className={css.artists}>
+        <Container>
+          <Filters />
+          <h2 className={css.artistsTitle}>Artist</h2>
+          {isLoading && <Skeleton />}
+          {(error || !data) && <p>Error occured</p>}
+          {data?.artists?.length === 0 && <NotFound />}
+          {!error && !isLoading && data?.artists?.length !== 0 && (
+            <ArtistsList artists={data.artists} />
+          )}
+          {!error && !isLoading && data.totalArtists && (
+            <Pagination
+              totalPages={Math.ceil(data.totalArtists / pagination.limit)}
+            />
+          )}
+        </Container>
+      </section>
+      {isOpenArtistInfo && <ArtistsInfo />}
+    </>
   );
 };
 
