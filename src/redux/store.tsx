@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { artistsApi } from "./artists/artistsApi";
 import { paginationReducer } from "./pagination/paginationSlice";
+import { feedbacksReducer } from "./feedback/feedbackSlice";
 
 const store = configureStore({
   reducer: {
+    feedbacks: feedbacksReducer,
     pagination: paginationReducer,
     [artistsApi.reducerPath]: artistsApi.reducer,
   },
