@@ -1,11 +1,11 @@
 .container {
   width: 310px;
-
-  @media screen and (min-width: 1440px) {
-    width: 1310px;
-  }
-
+  margin-right: auto;
+  margin-left: auto;
   @media screen and (min-width: 768px) {
     width: 640px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1310px;
   }
 }

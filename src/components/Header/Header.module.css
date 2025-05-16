@@ -1,0 +1,51 @@
+header {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 32px;
+  width: 1310px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  color: #f7f7f7;
+  font-size: 24px;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.header__logo_svg {
+  margin-right: 12px;
+}
+
+.navigation {
+  margin-left: 100px;
+}
+
+.navigation_list {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation__item_page {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+.contact_list {
+  display: flex;
+  gap: 18px;
+}

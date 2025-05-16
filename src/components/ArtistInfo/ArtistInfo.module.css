@@ -4,10 +4,316 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.70);
+  background-color: rgba(0, 0, 0, 0.7);
   /* backdrop-filter: blur(5px); */
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 8;
 }
 
+.artistInfoModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: flex;
+  align-items: start;
+  justify-content: center; */
+  display: flex;
+  /* align-items: start; */
+  /* justify-content: center; */
+  flex-direction: column;
+  /* gap: 16px; */
+  border-radius: 20px;
+  border: 1px solid rgba(253, 255, 97, 0.4);
+  background-color: var(--bg-secondary-color);
+  padding: 32px 16px;
+  width: 344px;
+  height: 915px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 32px;
+    width: 705px;
+    height: 665px;
+    /* gap: 32px; */
+    flex-direction: column;
+    /* gap: 0; */
+  }
+
+  @media screen and (min-width: 1200px) {
+    /* display: flex;
+    align-items: start;
+    justify-content: center; */
+    /* padding: 32px; */
+    flex-direction: row;
+    align-items: flex-start;
+    width: 864px;
+    height: 586px;
+    /* gap: 32px; */
+    /* gap: 32px;
+    flex-direction: row; */
+  }
+}
+
+.closeArtistInfoBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+/* 
+  @media screen and (min-width: 1200px) {
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  } */
+
+  & > img {
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* @media screen and (min-width: 1200px) {
+      width: 24px;
+      height: 24px;
+    } */
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.artistInfoImg {
+  width: 312px;
+  height: 228px;
+  border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 228px;
+    height: 228px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 237px;
+    height: 237px;
+  }
+}
+
+.artistInfoName {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.artistInfoDescription {
+  color: rgba(247, 247, 247, 0.5);
+  text-overflow: ellipsis;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  max-width: 312px;
+  margin-top: 16px;
+  max-height: 170px;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    max-width: 380px;
+    max-height: 136px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 531px;
+    max-height: 102px;
+  }
+}
+
+.artistInfoSongsTitle {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  margin-top: 32px;
+}
+
+.artistsInfoSongsList {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  max-height: 314px;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 296px;
+  }
+}
+
+.artistInfoSongItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 247, 247, 0.02) 0%,
+    rgba(247, 247, 247, 0.03) 100%
+  );
+  width: 100%;
+}
+
+.artistInfoSongNumber {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  width: 2rem;
+}
+
+.artistInfoSongName {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  /* margin-left: 16px; */
+  max-height: 14px;
+  text-wrap: balance;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  -moz-line-clamp: 5;
+  white-space: pre-wrap;
+  width: 75px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 127px;
+    max-height: 28px;
+    /* margin-left: 16px; */
+  }
+}
+
+.artistInfoSongAlbum {
+  color: rgba(247, 247, 247, 0.5);
+  font-family: Urbanist;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  /* margin-left: 24px; */
+  /* margin-right: 76px; */
+  width: 60px;
+  max-height: 12px;
+  text-wrap: balance;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  -moz-line-clamp: 5;
+  white-space: pre-wrap;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    /* margin-left: 24px; */
+    /* margin-right: 76px; */
+    width: 109px;
+    max-height: 28px;
+  }
+}
+
+.songNameAndAlbumBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: 16px;
+  }
+}
+
+.artistInfoSongDuration {
+  color: #f7f7f7;
+  font-family: Urbanist;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 260px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.artistInfoMovieLink {
+  margin-left: auto;
+}
+
+.test {
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+
+  /* @media screen and (min-width: 1200px) {
+    align-items: start;
+  } */
+}
