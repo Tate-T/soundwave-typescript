@@ -1,24 +1,64 @@
 .feedback{
+    width: 375px;
     display: flex;
     gap: 16px;
+    margin: 0 auto 16px;
     font-family: Urbanist;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        width: 736px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 1408px;
+    }
 }
 .part1{
-    width: 696px;
-    height: 535px;
-    border-radius: 42px;
+    border-radius: 22px;
     background: rgb(25, 25, 25);
+    width: 343px;
+    height: 392px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        border-radius: 42px;
+        width: 360px;
+        height: 554px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 696px;
+        height: 535px;
+    }
 }
 .banner{
-    width: 696px;
-    height: 535px;
+    width: 268px;
+    height: 172px;
+    @media screen and (min-width: 768px) {
+        width: 318px;
+        height: 204px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 442px;
+        height: 281px;
+    }
 }
 .part2{
-    width: 696px;
-    height: 535px;
-    border-radius: 42px;
+    width: 343px;
+    height: 455px;
+    border-radius: 22px;
     background: rgb(25, 25, 25);
-    padding: 64px 171px;
+    padding: 32px 16px;
+    @media screen and (min-width: 768px) {
+        border-radius: 42px;
+        width: 360px;
+        height: 554px;
+        padding: 64px 32px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 696px;
+        height: 535px;
+        padding: 64px 171px;
+    }
 }
 .subtitle{
     color: rgb(247, 247, 247);
@@ -63,14 +103,11 @@
     width: 24px;
     height: 24px;
 }
-/* .ratingBut > svg > path{
-    fill: #fff;
-} */
 .nameInput{
     margin-top: 14px;
     border: 1px solid rgba(247, 247, 247, 0.2);
     border-radius: 16px;
-    width: 353px;
+    width: 311px;
     height: 49px;
     padding: 15px;
     background-color: transparent;
@@ -80,16 +117,22 @@
     line-height: 19px;
     letter-spacing: -1%;
     transition: all .3s;
-    &:valid{
+    &:valid {
         border: 1px solid var(--text-secondary-color);
         color: rgb(247, 247, 247);
+    }
+    @media screen and (min-width: 768px) {
+        width: 296px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 353px;
     }
 }
 .commentInput{
     margin-top: 14px;
     border: 1px solid rgba(247, 247, 247, 0.2);
     border-radius: 16px;
-    width: 353px;
+    width: 311px;
     height: 91px;
     padding: 15px;
     background-color: transparent;
@@ -98,9 +141,15 @@
     font-weight: 500;
     line-height: 19px;
     letter-spacing: -1%;
-    &:valid{
+    &:valid {
         border: 1px solid var(--text-secondary-color);
         color: rgb(247, 247, 247);
+    }
+    @media screen and (min-width: 768px) {
+        width: 296px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 353px;
     }
 }
 .sendBut{
@@ -120,7 +169,7 @@
     letter-spacing: -1%;
     cursor: pointer;
     transition: all .3s;
-    &:hover{
+    &:hover {
         background: rgb(229, 232, 51);
     }
 }
