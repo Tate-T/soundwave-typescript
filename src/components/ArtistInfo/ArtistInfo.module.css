@@ -23,7 +23,7 @@
   /* align-items: start; */
   /* justify-content: center; */
   flex-direction: column;
-  gap: 16px;
+  /* gap: 16px; */
   border-radius: 20px;
   border: 1px solid rgba(253, 255, 97, 0.4);
   background-color: var(--bg-secondary-color);
@@ -38,8 +38,9 @@
     padding: 32px;
     width: 705px;
     height: 665px;
-    gap: 32px;
-    flex-direction: row;
+    /* gap: 32px; */
+    flex-direction: column;
+    /* gap: 0; */
   }
 
   @media screen and (min-width: 1200px) {
@@ -47,8 +48,11 @@
     align-items: start;
     justify-content: center; */
     /* padding: 32px; */
+    flex-direction: row;
+    align-items: flex-start;
     width: 864px;
     height: 586px;
+    /* gap: 32px; */
     /* gap: 32px;
     flex-direction: row; */
   }
@@ -166,6 +170,7 @@
   scrollbar-width: 0;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -282,6 +287,7 @@
   margin-left: 10px;
 
   @media screen and (min-width: 768px) {
+    margin-left: 260px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -291,4 +297,23 @@
 
 .artistInfoMovieLink {
   margin-left: auto;
+}
+
+.test {
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+
+  /* @media screen and (min-width: 1200px) {
+    align-items: start;
+  } */
 }

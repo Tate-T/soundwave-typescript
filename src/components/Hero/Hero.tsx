@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Play, Pause } from 'lucide-react'
 import css from './Hero.module.css'
-import popStar from '../../images/hero/girlPopStar.png'
+// import popStar from '../../images/hero/girlPopStar.png'
 
 const Hero = () => {
 	const audioRef = useRef<HTMLAudioElement>(null)
@@ -88,7 +88,7 @@ const Hero = () => {
 					<span id="currentTime">{formatTime(currentTime)}</span>
 					<span id="duration"> / {formatTime(duration)}</span>
 				</div>
-				<img alt="pop star" className={css.imgpopStar} src={popStar} />
+				{/* <img alt="pop star" className={css.imgpopStar} src={popStar} /> */}
 			</div>
 		</section>
 	)

@@ -3,12 +3,22 @@ import { FC } from "react";
 import css from "./Artist.module.css";
 import OpenArrow from "../../../images/icons/openArrow.svg";
 import clsx from "clsx";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../redux/store";
+import { setId } from "../../../redux/artists/artistInfoSlice";
+import { toggleArtistInfo } from "../../../redux/artists/artistInfoSlice";
 
 interface Props {
   data: ReducedArtist;
 }
 
 const Artist: FC<Props> = ({ data }) => {
+  const dispatch = useDispatch<AppDispatch>();
+
+  const handleOpenArtistInfo = () => {
+    dispatch(setId(data._id));
+    dispatch(toggleArtistInfo());
+  };
   return (
     <li className={css.artist} id={data._id}>
       <img
@@ -25,7 +35,7 @@ const Artist: FC<Props> = ({ data }) => {
           ))}
         </ul>
       )}
-      <button className={css.artistBtn}>
+      <button className={css.artistBtn} onClick={handleOpenArtistInfo}>
         <img
           className={css.artistIcon}
           src={OpenArrow}
