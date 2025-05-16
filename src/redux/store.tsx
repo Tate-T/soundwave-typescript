@@ -5,6 +5,7 @@ import { artistInfoReducer } from "./artists/artistInfoSlice";
 import { filtersReducer } from "./filters/filtersSlice";
 import { genresApi } from "./filters/genreApi";
 import persistReducer from "redux-persist/lib/persistReducer";
+import { feedbacksReducer } from "./feedback/feedbackSlice";
 import sessionStorage from "redux-persist/lib/storage/session";
 import { persistStore } from "redux-persist";
 
@@ -23,6 +24,7 @@ const store = configureStore({
   reducer: {
     pagination: persistedPaginationReducer,
     filters: persistedFiltersReducer,
+    feedbacks: feedbacksReducer,
     artistInfo: artistInfoReducer,
     [genresApi.reducerPath]: genresApi.reducer,
     [artistsApi.reducerPath]: artistsApi.reducer,

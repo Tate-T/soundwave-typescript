@@ -31,8 +31,14 @@ const Feedback = () => {
       'rating': rating,
     });
     setRating(0);
-    document.querySelector('input')!.value = '';
-    document.querySelector('textarea')!.value = '';
+    const nameInput = document.querySelector("input[placeholder='Name']") as HTMLInputElement | null;
+    const textarea = document.querySelector('textarea') as HTMLTextAreaElement | null;
+    if (nameInput) {
+      nameInput.value = '';
+    }
+    if (textarea) {
+      textarea.value = '';
+    }
   }
   return (<section className={css.feedback}>
     <div className={css.part1}>
