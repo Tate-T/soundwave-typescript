@@ -4,18 +4,24 @@
   padding-bottom: 64px;
   border-radius: 22px;
   background: var(--bg-color);
-  max-width: 1408px;
+
   margin-right: auto;
   margin-left: auto;
   margin-top: 16px;
+  width: auto;
+  @media screen and (min-width: 375px) {
+    width: 343px;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 64px;
     padding-bottom: 64px;
     border-radius: 42px;
+    width: 736px;
   }
   @media screen and (min-width: 1440px) {
     padding-top: 96px;
     padding-bottom: 96px;
+    width: 1408px;
   }
 }
 .artistsTitle {

@@ -6,16 +6,17 @@ import Feedback from "./components/Feedback/Feedback";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Phone from "./components/Phone/Phone";
 import Reviews from "./components/Reviews/Reviews";
 import "./reset.css";
 
 function App() {
   return (
     <>
-      {/* <ArtistsInfo _id="kakakak"/> */}
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       <Artists />
+      <Phone />
       {/* <Banners /> */}
       <Feedback />
       <Reviews />
