@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Hero />
       <Artists />
+      <Banners />
       <Phone />
-      {/* <Banners /> */}
       <Feedback />
       <Reviews />
       <Footer />
