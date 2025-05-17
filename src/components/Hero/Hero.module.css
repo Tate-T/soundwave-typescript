@@ -19,7 +19,7 @@
   width: 343px;
   height: 780px;
   border-radius: 42px;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   background: #191919;
   padding-top: 240px;
   padding-left: 16px;
@@ -118,7 +118,7 @@ height: 868px; */
     border-radius: 42px;
 
     width: 696px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     height: 868px;
   }
 }

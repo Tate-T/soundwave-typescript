@@ -7,7 +7,7 @@ header {
      display: flex;
   align-items: center;
   top: 32px;
-
+  width: 330px;
   left: 50%;
   transform: translate(-50%);
   @media screen and (min-width: 768px) {
@@ -20,7 +20,7 @@ header {
 }
 
 .header_logo {
- 
+  text-decoration: none;
   display: flex;
   align-items: center;
   color: #f7f7f7;
@@ -62,7 +62,7 @@ header {
 }
 
 .navigation__item_page {
-
+  text-decoration: none;
   /* flex-wrap: nowrap; */
   color: #f7f7f7;
   font-family: Urbanist;

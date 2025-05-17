@@ -33,7 +33,7 @@ const Footer = () => {
 
       <ul className={css.contact_list}>
         <li className={css.contact__list_item}>
-          <a href="https://www.facebook.com/goITclub/">
+          <a href="https://www.facebook.com/goITclub/" target="_blank">
             <svg
               className={css.contact__list_svg}
             
@@ -50,7 +50,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={css.contact__list_item}>
-          <a href="https://www.instagram.com/goitclub/">
+          <a href="https://www.instagram.com/goitclub/" target="_blank">
             <svg
               className={css.contact__list_svg}
           
@@ -71,7 +71,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={css.contact__list_item}>
-          <a href="https://www.youtube.com/c/GoIT">
+          <a href="https://www.youtube.com/c/GoIT" target="_blank">
             <svg
               className={css.contact__list_svg}
         
@@ -95,7 +95,7 @@ const Footer = () => {
         <a href="#artist" className={css.navLink}>
           Artist
         </a>
-        <a href="#form" className={css.navLink}>
+        <a href="#theform" className={css.navLink}>
           The form
         </a>
         <a href="#reviews" className={css.navLink}>

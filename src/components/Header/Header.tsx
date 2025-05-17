@@ -43,13 +43,13 @@ console.log(isOpen);
       <nav className={css.navigation}>
         <ul className={css.navigation_list}>
           <li className={css.navigation__list_item}>
-            <a className={css.navigation__item_page}>Artist</a>
+            <a className={css.navigation__item_page} href="#artist" >Artist</a>
           </li>
           <li className={css.navigation__list_item}>
-            <a className={css.navigation__item_page}>The form</a>
+            <a className={css.navigation__item_page} href="#theform">The form</a>
           </li>
           <li className={css.navigation__list_item}>
-            <a className={css.navigation__item_page}>Reviews</a>
+            <a className={css.navigation__item_page} href="#reviews">Reviews</a>
           </li>
         </ul>
       </nav>
@@ -57,7 +57,7 @@ console.log(isOpen);
       <div className={css.contact} >
         <ul className={css.contact_list}>
           <li className={css.contact__list_item}>
-            <a href="https://www.facebook.com/goITclub/">
+            <a href="https://www.facebook.com/goITclub/" target="_blank">
               <svg
                 className={css.contact__list_svg}
                 width="40"
@@ -75,7 +75,7 @@ console.log(isOpen);
             </a>
           </li>
           <li className={css.contact__list_item}>
-            <a href="https://www.instagram.com/goitclub/">
+            <a href="https://www.instagram.com/goitclub/" target="_blank">
               <svg
                 className={css.contact__list_svg}
                 width="40"
@@ -97,7 +97,7 @@ console.log(isOpen);
             </a>
           </li>
           <li className={css.contact__list_item}>
-            <a href="https://www.youtube.com/c/GoIT">
+            <a href="https://www.youtube.com/c/GoIT" target="_blank">
               <svg
                 className={css.contact__list_svg}
                 width="40"

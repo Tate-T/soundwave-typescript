@@ -1,19 +1,106 @@
-.phone > div {
+.phone {
   border-radius: 42px;
   background-color: var(--bg-color);
-  background-image: url("../../images/banners/phone2.png");
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: auto;
+  padding-top: 80px;
+  @media screen and (min-width: 375px) {
+    width: 343px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 736px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1408px;
+  }
+}
+
+.phone > div {
+  background-image: url("../../images/banners/phone25.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   /* background-position: 500px 150px; */
-  background-position: 61% 150px;
-  /* background-clip:; */
+  background-position: 68% 20px;
   /* padding-top: 200px;
   padding-bottom: 100px; */
   height: 720px;
+  padding-top: -80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 139px;
 }
-.phoneImg {
-  /* width: 675px;
-  height: 720px;
-  object-fit: cover;
-  object-position: top; */
+
+.phoneList {
+  display: flex;
+  /* outline: 1px solid red; */
+  height: 178px;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 42px 177px;
+}
+
+.phoneItem {
+  border-radius: 12px;
+  border: 1px solid rgba(253, 255, 97, 0.31);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(4.5px);
+  display: flex;
+  align-items: center;
+
+  padding: 22px 14px;
+  font-family: Urbanist;
+  color: var(--text-color);
+  width: 294px;
+  /* position: absolute; */
+  /* top: 415px;
+  left: 311px; */
+  /* &:last-child { */
+  /* bottom: 139px;
+    right: 422px; */
+  /* } */
+  &:first-child {
+    align-self: flex-start;
+  }
+}
+.phoneTextNumber {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  margin-right: 8px;
+}
+.phoneSubtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  height: 16px;
+  width: 88px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+  /* word-wrap: break-word; */
+}
+.phoneTextAuthor {
+  color: rgba(247, 247, 247, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  margin-right: 10px;
+}
+.phoneTextDuration {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  margin-right: 18px;
+}
+.phoneIcon {
+  width: 68px;
 }
