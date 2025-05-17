@@ -130,7 +130,6 @@ header {
 .burger_button {
   width: 28px;
   height: 28px;
-  border: 1PX solid  #FFF;
   margin-left: 140px;
   @media screen and (min-width: 768px) {
     display: none;
