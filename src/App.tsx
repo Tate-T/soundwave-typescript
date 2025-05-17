@@ -14,12 +14,12 @@ function App() {
     <>
       {/* <ArtistsInfo _id="kakakak"/> */}
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       <Artists />
-      {/* <Banners /> */}
+      <Banners />
       <Feedback />
       <Reviews />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
