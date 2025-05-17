@@ -19,7 +19,7 @@ function App() {
       {/* <Banners /> */}
       <Feedback />
       <Reviews />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
