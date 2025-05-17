@@ -12,6 +12,7 @@ const Hero = () => {
 		const audio = audioRef.current
 		if (!audio) return
 
+
 		if (isPlaying) {
 			audio.pause()
 		} else {
