@@ -1,18 +1,40 @@
 .sectionHero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
 .cardOne {
-  padding-top: 251px;
-  padding-left: 48px;
+  width: 343px;
+  height: 780px;
   border-radius: 42px;
-  background: #191919;
   border: solid 1px red;
-  height: 868px;
-  width: 696px;
+  background: #191919;
+  padding-top: 240px;
+  padding-left: 16px;
+  @media screen and (min-width: 768px) {
+    /* width: 736px;
+height: 868px; */
+    height: 868px;
+    width: 696px;
+    padding-top: 251px;
+    padding-left: 48px;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 868px;
+    width: 696px;
+  }
 }
 
 .listHesh {
@@ -49,25 +71,33 @@
 }
 
 .audioPlayer {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-
-  width: 294px;
-  height: 68px;
-  flex-shrink: 0;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12.600000381469727px);
   position: absolute;
-  top: 701px;
-  left: 54px;
   z-index: 5;
+  top: 404px;
+  left: 24px;
+  width: 294px;
+  height: 68px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    top: 594px;
+    left: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 294px;
+    height: 68px;
+    top: 701px;
+    left: 54px;
+  }
 }
 .cardTwo {
   position: relative;
-
   background: linear-gradient(
     180deg,
     rgba(253, 255, 97, 0.31) 0%,
@@ -75,47 +105,135 @@
   );
 
   backdrop-filter: blur(4.5px);
-  border-radius: 42px;
-  width: 696px;
-  border: solid 1px red;
-  height: 868px;
+
+  width: 343px;
+  height: 525px;
+  border-radius: 22px;
+
+  @media screen and (min-width: 768px) {
+    width: 736px;
+    height: 761px;
+  }
+  @media screen and (min-width: 1440px) {
+    border-radius: 42px;
+
+    width: 696px;
+    border: solid 1px red;
+    height: 868px;
+  }
 }
 .imgpopStar {
   z-index: 4;
   position: absolute;
   bottom: 0;
+  /* width: 343px;
+height: 464px; */
+  @media screen and (min-width: 768px) {
+    width: 736px;
+    height: 697px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 696px;
+    height: 697px;
+  }
 }
 
 .title {
   color: #f7f7f7;
+
+  /* Mobile/H1 */
   font-family: Urbanist;
-  font-size: 90px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80px;
-  letter-spacing: -2.7px;
+  line-height: 46px; /* 92% */
+  letter-spacing: -1.5px;
+  @media screen and (min-width: 768px) {
+    /* color: #F7F7F7;
 
-  width: 431px;
+font-family: Urbanist;
+font-size: 90px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px; 
+letter-spacing: -2.7px; */
+    font-family: Urbanist;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -2.7px;
+    width: 431px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-family: Urbanist;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -2.7px;
+
+    width: 431px;
+  }
 }
 
 .titleSpan {
-  color: #fdff61;
+ color: #fdff61;
+font-family: Urbanist;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: -1.5px;
+  @media screen and (min-width: 768px) {
+font-family: Urbanist;
+font-size: 90px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: -2.7px;
+  }
+  @media screen and (min-width: 1440px) {
+     
   font-family: Urbanist;
   font-size: 90px;
   font-style: normal;
   font-weight: 700;
   line-height: 80px;
   letter-spacing: -2.7px;
+  }
 }
 
 .titleTxt {
-  width: 431px;
+  width: 311px;
+
   color: rgba(247, 247, 247, 0.8);
-  margin-top: 40px;
+margin-top: 20px;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.16px;
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    /* Desktop_Tablet/Text */
+font-family: Urbanist;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.16px;
+width: 431px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 431px;
+    margin-top: 40px;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.16px;
+  }
 }
