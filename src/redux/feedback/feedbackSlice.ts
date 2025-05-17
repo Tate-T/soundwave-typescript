@@ -35,7 +35,11 @@ const FeedbacksSlice = createSlice({
             });
         });
         builder.addCase(postFeedback.rejected, (_, action) => {
-            toast.error("Feedback wasn't successfully posted (Try to write longer comment)", {
+            let msg = action?.payload;
+            if (msg?.includes('descr')){
+                msg = msg.replace('descr','Comment')
+            }
+            toast.error(`Feedback wasn't successfully posted (${msg})`, {
               position: "top-right",
               autoClose: 5000,
               hideProgressBar: false,
