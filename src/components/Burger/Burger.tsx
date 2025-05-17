@@ -5,13 +5,13 @@ const Burger = () => {
     <div className={css.burger_modal}>
       <ul className={css.burger_list}>
         <li className={css.burger__list_item}>
-          <a className={css.burger__item_page}>Artist</a>
-        </li>
-        <li className={css.burger__list_item}>
-          <a className={css.burger__item_page}>The form</a>
-        </li>
-        <li className={css.burger__list_item}>
-          <a className={css.burger__item_page}>Reviews</a>
+        <a className={css.navigation__item_page} href="#artist" >Artist</a>
+          </li>
+          <li className={css.navigation__list_item}>
+            <a className={css.navigation__item_page} href="#form">The form</a>
+          </li>
+          <li className={css.navigation__list_item}>
+            <a className={css.navigation__item_page} href="#reviews">Reviews</a>
         </li>
       </ul>
 
