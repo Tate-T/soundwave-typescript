@@ -46,7 +46,7 @@ console.log(isOpen);
             <a className={css.navigation__item_page} href="#artist" >Artist</a>
           </li>
           <li className={css.navigation__list_item}>
-            <a className={css.navigation__item_page} href="#theform">The form</a>
+            <a className={css.navigation__item_page} href="#form">The form</a>
           </li>
           <li className={css.navigation__list_item}>
             <a className={css.navigation__item_page} href="#reviews">Reviews</a>
