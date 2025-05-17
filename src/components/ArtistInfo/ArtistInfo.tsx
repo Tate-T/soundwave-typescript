@@ -27,6 +27,7 @@ const ArtistsInfo = () => {
   const currentArtistId = useSelector(selectArtistInfoId);
   const { data, isLoading, error } = useGetArtistByIdQuery(currentArtistId);
   console.log(isLoading);
+  console.log(window.screen.width)
   if (isLoading)
     return (
       <>
