@@ -1,8 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Play, Pause } from 'lucide-react'
 import css from './Hero.module.css'
-// import popStar from '../../images/hero/girlPopStar.png'
-
+import popSrar from "../../images/Hero/girlPopStar.png"
 const Hero = () => {
 	const audioRef = useRef<HTMLAudioElement>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
@@ -64,12 +63,21 @@ const Hero = () => {
 						recommendations just for you.
 					</p>
 				</div>
+				<ul className={css.listHesh}>
+					<li className={css.listHeshItem}>#Musicbands</li>
+					<li className={css.listHeshItem}>#Artist</li>
+					<li className={css.listHeshItem}>#Sound</li>
+					<li className={css.listHeshItem}>#Popular</li>
+					<li className={css.listHeshItem}>#Collection</li>
+					<li className={css.listHeshItem}>#Art</li>
+				</ul>
+
 			</div>
 			<div className={css.cardTwo}>
 				<div className={css.audioPlayer}>
 					<audio
 						ref={audioRef}
-						src="/musicpidmanula.mp3"
+						src="./musucpidmanula.mp3"
 						preload="metadata"
 						onTimeUpdate={handleTimeUpdate}
 						onLoadedMetadata={handleLoadedMetadata}
@@ -88,7 +96,7 @@ const Hero = () => {
 					<span id="currentTime">{formatTime(currentTime)}</span>
 					<span id="duration"> / {formatTime(duration)}</span>
 				</div>
-				{/* <img alt="pop star" className={css.imgpopStar} src={popStar} /> */}
+				<img alt="pop star" className={css.imgpopStar} src={popSrar} />
 			</div>
 		</section>
 	)
