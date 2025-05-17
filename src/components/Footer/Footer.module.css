@@ -55,7 +55,7 @@
 .navLink {
   color: var(--text-secondary-color);
   text-decoration: none;
-  transition: color 0.3s;
+  /* transition: color 0.3s; */
   font-family: Urbanist;
     font-weight: 600;
     font-size: 16px;
@@ -98,6 +98,7 @@
 
 
 .footer_logo {
+  text-decoration: none;
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -114,11 +115,13 @@
 }
 
 .footer__logo_svg {
+  
   margin-right: 12px;
 }
 
 
 .copyright {
+  text-decoration: none;
   color: rgb(247, 247, 247);
 font-family: Urbanist;
 font-size: 16px;
