@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/soundwave-typescript/static/css/main.420b33d7.css",
-    "main.js": "/soundwave-typescript/static/js/main.6b127a2a.js",
+    "main.css": "/soundwave-typescript/static/css/main.2292a8d5.css",
+    "main.js": "/soundwave-typescript/static/js/main.0b0afc3f.js",
     "index.html": "/soundwave-typescript/index.html",
     "static/media/openArrow.svg": "/soundwave-typescript/static/media/openArrow.914dc9991eb9f30716b6f7456733ee65.svg",
     "static/media/search.svg": "/soundwave-typescript/static/media/search.7508efaedc0b9f4d6c1248ebdf3c2798.svg",
@@ -9,11 +9,11 @@
     "static/media/x.svg": "/soundwave-typescript/static/media/x.0febf59063664ad7ced9d083b485e0d0.svg",
     "static/media/paginationArrow.svg": "/soundwave-typescript/static/media/paginationArrow.5ab049869bd6af0cf8795239a7bc9811.svg",
     "static/media/dropdownArrow.svg": "/soundwave-typescript/static/media/dropdownArrow.d78f36aa0189df5a5f2916eeadbd5ef0.svg",
-    "main.420b33d7.css.map": "/soundwave-typescript/static/css/main.420b33d7.css.map",
-    "main.6b127a2a.js.map": "/soundwave-typescript/static/js/main.6b127a2a.js.map"
+    "main.2292a8d5.css.map": "/soundwave-typescript/static/css/main.2292a8d5.css.map",
+    "main.0b0afc3f.js.map": "/soundwave-typescript/static/js/main.0b0afc3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.420b33d7.css",
-    "static/js/main.6b127a2a.js"
+    "static/css/main.2292a8d5.css",
+    "static/js/main.0b0afc3f.js"
   ]
 }
