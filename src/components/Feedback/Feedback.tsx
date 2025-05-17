@@ -25,14 +25,14 @@ const Feedback = () => {
   };
   const sendReview = (e: React.MouseEvent<HTMLElement>): void => {
     e.preventDefault();
+    const nameInput = document.querySelector("input[placeholder='Name']") as HTMLInputElement | null;
+    const textarea = document.querySelector('textarea') as HTMLTextAreaElement | null;
     postRev({
-      'name': document.querySelector('input')?.value || '',
-      'descr': document.querySelector('textarea')?.value || '',
+      'name': nameInput?.value || '',
+      'descr': textarea?.value || '',
       'rating': rating,
     });
     setRating(0);
-    const nameInput = document.querySelector("input[placeholder='Name']") as HTMLInputElement | null;
-    const textarea = document.querySelector('textarea') as HTMLTextAreaElement | null;
     if (nameInput) {
       nameInput.value = '';
     }

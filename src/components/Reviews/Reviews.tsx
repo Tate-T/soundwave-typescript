@@ -1,9 +1,13 @@
 import css from './Reviews.module.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { getFeedbacks } from '../../redux/feedback/feedbackAPI';
 import { useSelector, useDispatch } from 'react-redux';
 import type { RootState } from '../../redux/store';
 import type { AppDispatch } from '../../redux/store';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 type FeedbackSchema = {
   id?: number;
@@ -15,17 +19,33 @@ type FeedbackSchema = {
 const Reviews = () => {
   const dispatch = useDispatch<AppDispatch>();
   const reviewsList: FeedbackSchema[] = useSelector((state: RootState) => state.feedbacks.reviews);
+  const [isClientReady, setIsClientReady] = useState<boolean>(false);
   const fetchReviews = async () => {
     await dispatch(getFeedbacks());
+    setIsClientReady(true);
   };
   useEffect(() => {
-    fetchReviews();
+    fetchReviews(); 
   }, []);
   return <section className={css.reviewsSection}>
     <h2 className={css.title}>Reviews</h2>
-    <ul className={css.reviews}>
+    {isClientReady && (<Swiper
+        modules={[Autoplay, Pagination]}
+        pagination={{ clickable: true }}
+        spaceBetween={16}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        initialSlide={0}
+        loop={true}
+        slidesPerView={1}
+        breakpoints={{
+          375: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1440: { slidesPerView: 3 },
+        }}
+        className={css.reviews}
+      >
       {reviewsList.map((review: FeedbackSchema) => 
-        <li className={css.review} key={Math.floor(Math.random() * 900000) + 100000}>
+        <SwiperSlide className={css.review} key={Math.floor(Math.random() * 900000) + 100000}>
           <div className={css.ratings}>
           <svg width="21.788086" height="20.770752" viewBox="0 0 21.7881 20.7708" fill="none" xmlns="http://www.w3.org/2000/svg">
 	          <defs/>
@@ -55,9 +75,9 @@ const Reviews = () => {
           </div>
           <h3 className={css.name}>{review.name}</h3>
           <p className={css.text}>{review.descr}</p>
-        </li>
+        </SwiperSlide>
       )}
-    </ul>
+    </Swiper>)}
   </section>;
 };
 

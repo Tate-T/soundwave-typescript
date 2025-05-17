@@ -1,8 +1,8 @@
 .feedback{
-    width: 375px;
+    width: 343px;
     display: flex;
+    margin: 0 auto;
     gap: 16px;
-    margin: 0 auto 16px;
     font-family: Urbanist;
     flex-wrap: wrap;
     @media screen and (min-width: 768px) {
