@@ -47,7 +47,7 @@ const Artists = () => {
   const { data, error, isLoading } = useGetArtistsQuery(params);
   return (
     <>
-      <section className={css.artists}>
+      <section className={css.artists} id="artist">
         <Container>
           <Filters />
           <h2 className={css.artistsTitle}>Artist</h2>

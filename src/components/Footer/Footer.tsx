@@ -95,7 +95,7 @@ const Footer = () => {
         <a href="#artist" className={css.navLink}>
           Artist
         </a>
-        <a href="#theform" className={css.navLink}>
+        <a href="#form" className={css.navLink}>
           The form
         </a>
         <a href="#reviews" className={css.navLink}>

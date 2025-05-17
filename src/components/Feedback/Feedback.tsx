@@ -40,7 +40,7 @@ const Feedback = () => {
       textarea.value = '';
     }
   }
-  return (<section className={css.feedback}>
+  return (<section className={css.feedback} id='form'>
     <div className={css.part1}>
       <img src="https://i.ibb.co/60ck3LDy/image-2.png" alt='img' className={css.banner} />
     </div>

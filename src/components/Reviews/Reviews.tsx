@@ -27,7 +27,7 @@ const Reviews = () => {
   useEffect(() => {
     fetchReviews(); 
   }, []);
-  return <section className={css.reviewsSection}>
+  return <section className={css.reviewsSection} id='reviews'>
     <h2 className={css.title}>Reviews</h2>
     {isClientReady && (<Swiper
         modules={[Autoplay, Pagination]}
