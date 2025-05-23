@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/soundwave-typescript/static/css/main.810c72e3.css",
-    "main.js": "/soundwave-typescript/static/js/main.4c2faa74.js",
+    "main.css": "/soundwave-typescript/static/css/main.aaaa27ae.css",
+    "main.js": "/soundwave-typescript/static/js/main.7f378efd.js",
     "static/media/song.mp3": "/soundwave-typescript/static/media/song.ce3090130a81481d7125.mp3",
     "static/media/phone25.PNG": "/soundwave-typescript/static/media/phone25.306978672ffc7e4b29ac.PNG",
     "static/media/girlPopStar.png": "/soundwave-typescript/static/media/girlPopStar.df7d68844f9c79386a79.png",
     "static/media/heaphones.png": "/soundwave-typescript/static/media/heaphones.4da4aa35ea0ae662e52f.png",
-    "static/media/youtube.svg": "/soundwave-typescript/static/media/youtube.e6f039d478759a37045edb42984af1df.svg",
+    "static/media/youtube.svg": "/soundwave-typescript/static/media/youtube.1c569c50ca712e77581d3f6fd43405a1.svg",
     "index.html": "/soundwave-typescript/index.html",
     "static/media/openArrow.svg": "/soundwave-typescript/static/media/openArrow.914dc9991eb9f30716b6f7456733ee65.svg",
     "static/media/search.svg": "/soundwave-typescript/static/media/search.7508efaedc0b9f4d6c1248ebdf3c2798.svg",
@@ -14,11 +14,11 @@
     "static/media/x.svg": "/soundwave-typescript/static/media/x.0febf59063664ad7ced9d083b485e0d0.svg",
     "static/media/paginationArrow.svg": "/soundwave-typescript/static/media/paginationArrow.5ab049869bd6af0cf8795239a7bc9811.svg",
     "static/media/dropdownArrow.svg": "/soundwave-typescript/static/media/dropdownArrow.d78f36aa0189df5a5f2916eeadbd5ef0.svg",
-    "main.810c72e3.css.map": "/soundwave-typescript/static/css/main.810c72e3.css.map",
-    "main.4c2faa74.js.map": "/soundwave-typescript/static/js/main.4c2faa74.js.map"
+    "main.aaaa27ae.css.map": "/soundwave-typescript/static/css/main.aaaa27ae.css.map",
+    "main.7f378efd.js.map": "/soundwave-typescript/static/js/main.7f378efd.js.map"
   },
   "entrypoints": [
-    "static/css/main.810c72e3.css",
-    "static/js/main.4c2faa74.js"
+    "static/css/main.aaaa27ae.css",
+    "static/js/main.7f378efd.js"
   ]
 }
