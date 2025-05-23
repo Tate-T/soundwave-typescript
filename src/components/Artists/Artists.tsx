@@ -43,7 +43,7 @@ const Artists = () => {
       params + `&genre=${encodeURIComponent(filters.genre.toLowerCase())}`;
   if (filters.sortName.length !== 0)
     params = params + `&sortName=${filters.sortName}`;
-  console.log(params);
+  // console.log(params);
   const { data, error, isLoading } = useGetArtistsQuery(params);
   return (
     <>

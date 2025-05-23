@@ -1,0 +1,69 @@
+.banner {
+  border-radius: 42px;
+  background: var(--accent-color);
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16px;
+  position: relative;
+  padding: 32px 0;
+
+  @media screen and (min-width: 375px) {
+    width: 343px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 736px;
+    padding: 50px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1408px;
+  }
+}
+.banner > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerImg {
+  margin-right: 10px;
+  width: auto;
+  @media screen and (min-width: 375px) {
+    width: 94px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 168px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 196px;
+  }
+}
+
+.bannerBlock {
+  width: auto;
+  @media screen and (min-width: 375px) {
+    max-width: 161px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 437px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 609px;
+  }
+}
+
+.bannerTitle {
+  font-weight: 700;
+  color: var(--bg-color);
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.54px;
+  text-wrap: balance;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.2%;
+  }
+}
+.bannerSubtext {
+  color: #a7aa07;
+}

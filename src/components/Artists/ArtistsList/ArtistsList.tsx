@@ -11,7 +11,7 @@ const ArtistsList: FC<Props> = ({ artists }) => {
   return (
     <ul className={css.artists}>
       {artists.map((artist: ReducedArtist) => (
-        <Artist data={artist} />
+        <Artist data={artist} key={artist._id} />
       ))}
     </ul>
   );
