@@ -1,8 +1,13 @@
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  position: relative;
+  margin-top: 32px;
+  @media screen and (min-width: 768px) {
+    margin-top: 64px;
+  }
 }
 .paginationItem {
   background-color: transparent;
@@ -27,6 +32,10 @@
 }
 .paginationItem:has(.paginationArrowIcon) {
   background-color: rgba(255, 255, 255, 0.04);
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .paginationItemActive {
   color: var(--bg-color);
