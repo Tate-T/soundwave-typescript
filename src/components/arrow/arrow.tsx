@@ -5,7 +5,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { Play, Pause } from 'lucide-react'
 
 import css from './arrow.module.css'
-import arrow from '../../images/hero/bor.png'
+import arrow from '../../images/Hero/bor.png'
 
 
 const Arrow = () => {

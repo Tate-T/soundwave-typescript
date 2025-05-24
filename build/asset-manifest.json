@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/soundwave-typescript/static/css/main.de010ae8.css",
+    "main.css": "/soundwave-typescript/static/css/main.94e83b72.css",
     "main.js": "/soundwave-typescript/static/js/main.eaea8254.js",
     "static/media/song.mp3": "/soundwave-typescript/static/media/song.ce3090130a81481d7125.mp3",
     "static/media/phone25.PNG": "/soundwave-typescript/static/media/phone25.306978672ffc7e4b29ac.PNG",
@@ -14,11 +14,11 @@
     "static/media/x.svg": "/soundwave-typescript/static/media/x.bc92c3fd6707a58ae064576b5a4d7b3a.svg",
     "static/media/paginationArrow.svg": "/soundwave-typescript/static/media/paginationArrow.e8dba055d53f84a9f9d71a98fb266992.svg",
     "static/media/dropdownArrow.svg": "/soundwave-typescript/static/media/dropdownArrow.950e36103b70f4f4ee865fc6741d9658.svg",
-    "main.de010ae8.css.map": "/soundwave-typescript/static/css/main.de010ae8.css.map",
+    "main.94e83b72.css.map": "/soundwave-typescript/static/css/main.94e83b72.css.map",
     "main.eaea8254.js.map": "/soundwave-typescript/static/js/main.eaea8254.js.map"
   },
   "entrypoints": [
-    "static/css/main.de010ae8.css",
+    "static/css/main.94e83b72.css",
     "static/js/main.eaea8254.js"
   ]
 }
