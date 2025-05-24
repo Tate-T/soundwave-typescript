@@ -3,6 +3,7 @@
 body {
   background-color: var(--bg-secondary-color);
   font-family: Urbanist;
+  /* overflow: hidden; */
 }
 
 :root {
