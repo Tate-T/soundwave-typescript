@@ -87,8 +87,9 @@ const ArtistsInfo = () => {
                           {song.intDuration}
                         </p>
                         <a
-                          href={song.movie === null ? "" : song.movie}
+                          href={song.movie === null ? "https://www.youtube.com/watch?v=LIqeDVeWeHY" : song.movie}
                           className={css.artistInfoMovieLink}
+                          target="_blank"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -172,8 +173,9 @@ const ArtistsInfo = () => {
                       {song.intDuration}
                     </p>
                     <a
-                      href={song.movie === null ? "" : song.movie}
+                      href={song.movie === null ? "https://www.youtube.com/watch?v=LIqeDVeWeHY" : song.movie}
                       className={css.artistInfoMovieLink}
+                      target="_blank"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
