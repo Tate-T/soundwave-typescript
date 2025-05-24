@@ -139,9 +139,8 @@ height: 464px; */
     height: 697px;
   }
 }
-
 .title {
-  color: #f7f7f7;
+  color: transparent;
 
   /* Mobile/H1 */
   font-family: Urbanist;
@@ -150,6 +149,10 @@ height: 464px; */
   font-weight: 700;
   line-height: 46px; /* 92% */
   letter-spacing: -1.5px;
+  background: url(https://64.media.tumblr.com/3dfab8fbff34a579cf75aed9e010ec1e/tumblr_pg4v4lSMJi1qeyvpto1_500.gifv);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
   @media screen and (min-width: 768px) {
     /* color: #F7F7F7;
 
