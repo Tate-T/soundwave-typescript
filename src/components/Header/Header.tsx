@@ -51,7 +51,7 @@ console.log(isOpen);
             <div  className={css.boll}></div>
           </li>
           <li className={css.navigation__list_item}>
-            <a className={css.navigation__item_page} href="#reviews">Reviews</a>
+            <a className={css.navigation__item_page} href="#reviews" >Reviews</a>
             <div  className={css.boll}></div>
           </li>
         </ul>

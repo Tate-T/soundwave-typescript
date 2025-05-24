@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 header {
   z-index: 3;
   position: absolute;
