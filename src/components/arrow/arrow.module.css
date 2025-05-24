@@ -7,6 +7,7 @@
 	bottom: 20px;
 	right: 20px;
 	opacity: 0.8;
+
 	font-size: 30px;
 	color: #fff;
 	transition: 0.2s linear;
@@ -15,9 +16,12 @@
 	border-radius: 30px;
 }
 
+
 .btnScroll:hover {
 	opacity: 1;
+
 }
 .btnScroll:focus {
+    
 	outline: none;
 }
