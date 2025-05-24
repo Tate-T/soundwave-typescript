@@ -1,7 +1,12 @@
+
+
+
 import React, { useRef, useState, useEffect } from 'react'
 import { Play, Pause } from 'lucide-react'
+
 import css from './arrow.module.css'
 import arrow from '../../images/hero/bor.png'
+
 
 const Arrow = () => {
 	return (
