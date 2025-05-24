@@ -1,0 +1,23 @@
+.btnScroll {
+	background-color: #772099;
+	border: 2px solid #67028f;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0.8;
+	font-size: 30px;
+	color: #fff;
+	transition: 0.2s linear;
+	cursor: pointer;
+	z-index: 99;
+	border-radius: 30px;
+}
+
+.btnScroll:hover {
+	opacity: 1;
+}
+.btnScroll:focus {
+	outline: none;
+}
