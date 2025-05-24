@@ -1,5 +1,5 @@
 import css from "./Banner.module.css";
-import HeadphonesImg from "../../images/banners/heaphones.png";
+import HeadphonesImg from "../../images/banners/Heaphones.png";
 import Container from "../Common/Container/Container";
 
 const Banner = () => {
