@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/soundwave-typescript/static/css/main.aaaa27ae.css",
-    "main.js": "/soundwave-typescript/static/js/main.7f378efd.js",
+    "main.css": "/soundwave-typescript/static/css/main.de010ae8.css",
+    "main.js": "/soundwave-typescript/static/js/main.eaea8254.js",
     "static/media/song.mp3": "/soundwave-typescript/static/media/song.ce3090130a81481d7125.mp3",
     "static/media/phone25.PNG": "/soundwave-typescript/static/media/phone25.306978672ffc7e4b29ac.PNG",
     "static/media/girlPopStar.png": "/soundwave-typescript/static/media/girlPopStar.df7d68844f9c79386a79.png",
-    "static/media/heaphones.png": "/soundwave-typescript/static/media/heaphones.4da4aa35ea0ae662e52f.png",
-    "static/media/youtube.svg": "/soundwave-typescript/static/media/youtube.1c569c50ca712e77581d3f6fd43405a1.svg",
+    "static/media/Heaphones.png": "/soundwave-typescript/static/media/Heaphones.4da4aa35ea0ae662e52f.png",
+    "static/media/youtube.svg": "/soundwave-typescript/static/media/youtube.e6f039d478759a37045edb42984af1df.svg",
     "index.html": "/soundwave-typescript/index.html",
-    "static/media/openArrow.svg": "/soundwave-typescript/static/media/openArrow.914dc9991eb9f30716b6f7456733ee65.svg",
-    "static/media/search.svg": "/soundwave-typescript/static/media/search.7508efaedc0b9f4d6c1248ebdf3c2798.svg",
-    "static/media/paginationDouledArrow.svg": "/soundwave-typescript/static/media/paginationDouledArrow.89d7a65871dcf4a88d839834395322ef.svg",
-    "static/media/x.svg": "/soundwave-typescript/static/media/x.0febf59063664ad7ced9d083b485e0d0.svg",
-    "static/media/paginationArrow.svg": "/soundwave-typescript/static/media/paginationArrow.5ab049869bd6af0cf8795239a7bc9811.svg",
-    "static/media/dropdownArrow.svg": "/soundwave-typescript/static/media/dropdownArrow.d78f36aa0189df5a5f2916eeadbd5ef0.svg",
-    "main.aaaa27ae.css.map": "/soundwave-typescript/static/css/main.aaaa27ae.css.map",
-    "main.7f378efd.js.map": "/soundwave-typescript/static/js/main.7f378efd.js.map"
+    "static/media/openArrow.svg": "/soundwave-typescript/static/media/openArrow.6fc014ed005e87a10fd6605c05aac3d6.svg",
+    "static/media/search.svg": "/soundwave-typescript/static/media/search.963ccf8f97a14bac31e58d6d68a48ef0.svg",
+    "static/media/paginationDouledArrow.svg": "/soundwave-typescript/static/media/paginationDouledArrow.4b42a6f5d3ea69ec9be4f5abc848e514.svg",
+    "static/media/x.svg": "/soundwave-typescript/static/media/x.bc92c3fd6707a58ae064576b5a4d7b3a.svg",
+    "static/media/paginationArrow.svg": "/soundwave-typescript/static/media/paginationArrow.e8dba055d53f84a9f9d71a98fb266992.svg",
+    "static/media/dropdownArrow.svg": "/soundwave-typescript/static/media/dropdownArrow.950e36103b70f4f4ee865fc6741d9658.svg",
+    "main.de010ae8.css.map": "/soundwave-typescript/static/css/main.de010ae8.css.map",
+    "main.eaea8254.js.map": "/soundwave-typescript/static/js/main.eaea8254.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaaa27ae.css",
-    "static/js/main.7f378efd.js"
+    "static/css/main.de010ae8.css",
+    "static/js/main.eaea8254.js"
   ]
 }

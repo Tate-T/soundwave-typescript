@@ -29,10 +29,8 @@
   padding-top: 240px;
   padding-left: 16px;
   @media screen and (min-width: 768px) {
-    /* width: 736px;
-height: 868px; */
     height: 868px;
-    width: 696px;
+    width: 736px;
     padding-top: 251px;
     padding-left: 48px;
   }

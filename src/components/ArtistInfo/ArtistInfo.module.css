@@ -29,7 +29,8 @@
   background-color: var(--bg-secondary-color);
   padding: 32px 16px;
   width: 344px;
-  height: 615px;
+  height: 100vh;
+  /* height: 615px; */
   overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
@@ -38,7 +39,7 @@
     justify-content: center;
     padding: 32px;
     width: 705px;
-    height: 665px;
+    /* height: 665px; */
     /* gap: 32px; */
     flex-direction: column;
     /* gap: 0; */
@@ -52,7 +53,7 @@
     flex-direction: row;
     align-items: flex-start;
     width: 864px;
-    height: 586px;
+    /* height: 586px; */
     /* gap: 32px; */
     /* gap: 32px;
     flex-direction: row; */
