@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={css.footer}>
       <div className={css.footer_container}>
-      <a className={css.footer_logo}>
+      <a className={css.footer_logo} href="#header">
         <svg
           className={css.footer__logo_svg}
           width="42"
