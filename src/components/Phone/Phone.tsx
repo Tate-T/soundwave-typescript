@@ -6,11 +6,17 @@ import YoutubeIcon from "../../images/icons/youtube.svg";
 const SongItem = () => {
   return (
     <li className={css.phoneItem}>
-      <p className={css.phoneTextNumber}>01</p>
-      <h3 className={css.phoneSubtitle}>Shadows and Tall Trees</h3>
-      <p className={css.phoneTextAuthor}>U2</p>
-      <p className={css.phoneTextDuration}>05:43</p>
-      <img className={css.phoneIcon} src={YoutubeIcon} alt="youtube logo" />
+      <a
+        className={css.phoneLink}
+        href="https://www.youtube.com/watch?v=hTWKbfoikeg"
+        target="_blank"
+      >
+        <p className={css.phoneTextNumber}>01</p>
+        <h3 className={css.phoneSubtitle}>Shadows and Tall Trees</h3>
+        <p className={css.phoneTextAuthor}>U2</p>
+        <p className={css.phoneTextDuration}>05:43</p>
+        <img className={css.phoneIcon} src={YoutubeIcon} alt="youtube logo" />
+      </a>
     </li>
   );
 };

@@ -47,7 +47,7 @@
   align-items: flex-end;
   justify-content: center;
   height: 116px;
-  gap: 26px ;
+  gap: 26px;
   /* flex-direction: column; */
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -89,6 +89,12 @@
     padding: 22px 14px;
     margin-right: 0;
   }
+}
+.phoneLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }
 .phoneTextNumber {
   font-weight: 700;
