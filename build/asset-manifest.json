@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/soundwave-typescript/static/css/main.eb1fc250.css",
-    "main.js": "/soundwave-typescript/static/js/main.91fa2cb0.js",
+    "main.css": "/soundwave-typescript/static/css/main.de010ae8.css",
+    "main.js": "/soundwave-typescript/static/js/main.eaea8254.js",
     "static/media/song.mp3": "/soundwave-typescript/static/media/song.ce3090130a81481d7125.mp3",
     "static/media/phone25.PNG": "/soundwave-typescript/static/media/phone25.306978672ffc7e4b29ac.PNG",
     "static/media/girlPopStar.png": "/soundwave-typescript/static/media/girlPopStar.df7d68844f9c79386a79.png",
-    "static/media/heaphones.png": "/soundwave-typescript/static/media/heaphones.4da4aa35ea0ae662e52f.png",
+    "static/media/Heaphones.png": "/soundwave-typescript/static/media/Heaphones.4da4aa35ea0ae662e52f.png",
     "static/media/youtube.svg": "/soundwave-typescript/static/media/youtube.e6f039d478759a37045edb42984af1df.svg",
     "index.html": "/soundwave-typescript/index.html",
     "static/media/openArrow.svg": "/soundwave-typescript/static/media/openArrow.6fc014ed005e87a10fd6605c05aac3d6.svg",
@@ -14,11 +14,11 @@
     "static/media/x.svg": "/soundwave-typescript/static/media/x.bc92c3fd6707a58ae064576b5a4d7b3a.svg",
     "static/media/paginationArrow.svg": "/soundwave-typescript/static/media/paginationArrow.e8dba055d53f84a9f9d71a98fb266992.svg",
     "static/media/dropdownArrow.svg": "/soundwave-typescript/static/media/dropdownArrow.950e36103b70f4f4ee865fc6741d9658.svg",
-    "main.eb1fc250.css.map": "/soundwave-typescript/static/css/main.eb1fc250.css.map",
-    "main.91fa2cb0.js.map": "/soundwave-typescript/static/js/main.91fa2cb0.js.map"
+    "main.de010ae8.css.map": "/soundwave-typescript/static/css/main.de010ae8.css.map",
+    "main.eaea8254.js.map": "/soundwave-typescript/static/js/main.eaea8254.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb1fc250.css",
-    "static/js/main.91fa2cb0.js"
+    "static/css/main.de010ae8.css",
+    "static/js/main.eaea8254.js"
   ]
 }
