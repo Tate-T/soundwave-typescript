@@ -1,10 +1,14 @@
 .sectionHero {
+  margin-right: auto;
+  margin-left: auto;
+  width: 343px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    width: 736px;
   }
   @media screen and (min-width: 1440px) {
     flex-direction: row;
@@ -12,6 +16,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    width: auto;
   }
 }
 
@@ -111,10 +116,11 @@ height: 868px; */
   width: 343px;
   height: 525px;
   border-radius: 22px;
-
+  margin-top: 16px;
   @media screen and (min-width: 768px) {
     width: 736px;
     height: 761px;
+    margin-top: 0;
   }
   @media screen and (min-width: 1440px) {
     border-radius: 42px;
