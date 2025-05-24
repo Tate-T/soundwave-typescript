@@ -12,7 +12,7 @@ const IsOpenBurger = (): void => setOpen(!isOpen);
 console.log(isOpen);
   return (
     // <Container>
-    <header>
+    <header id="header">
       <a className={css.header_logo}>
         <svg
           className={css.header__logo_svg}
@@ -44,12 +44,15 @@ console.log(isOpen);
         <ul className={css.navigation_list}>
           <li className={css.navigation__list_item}>
             <a className={css.navigation__item_page} href="#artist" >Artist</a>
+            <div  className={css.boll}></div>
           </li>
           <li className={css.navigation__list_item}>
             <a className={css.navigation__item_page} href="#form">The form</a>
+            <div  className={css.boll}></div>
           </li>
           <li className={css.navigation__list_item}>
             <a className={css.navigation__item_page} href="#reviews">Reviews</a>
+            <div  className={css.boll}></div>
           </li>
         </ul>
       </nav>

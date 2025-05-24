@@ -1,17 +1,14 @@
-
-
 header {
   z-index: 3;
   position: absolute;
   justify-items: center;
-     display: flex;
+  display: flex;
   align-items: center;
   top: 32px;
   width: 330px;
   left: 50%;
   transform: translate(-50%);
   @media screen and (min-width: 768px) {
-   
     width: 660px;
   }
   @media screen and (min-width: 1440px) {
@@ -31,7 +28,6 @@ header {
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
-
 }
 
 .header__logo_svg {
@@ -42,23 +38,19 @@ header {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
- margin-left: 48px;
- margin-right: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
   }
   @media screen and (min-width: 1440px) {
     margin-right: 0px;
     margin-left: 100px;
   }
-  
 }
 
 .navigation_list {
- 
   display: flex;
   margin-top: 10px;
   gap: 30px;
-
- 
 }
 
 .navigation__item_page {
@@ -69,41 +61,27 @@ header {
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
-
 }
 
-.navigation__item_page::after {
+.navigation__list_item:hover .boll {
   @media screen and (min-width: 768px) {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgb(253, 255, 97);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* position: absolute;
-    top: 270%; */
-    left: 0%;
-    opacity: 0;
-    margin-top: 4px;
-    transition: opacity 250ms cubic-bezier(0.215, 0.61, 0.355, 1) 500ms,
-      transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 500ms;
-    /* transform: scaleX(0); */
-  }
+    
+      display: block;
+      background-color: rgb(253, 255, 97);
+ }
 }
 
-.navigation__item_page:hover::after {
+/* .navigation__item_page:hover::after {
   @media screen and (min-width: 768px) {
     opacity: 1;
     transform: scaleX(1);
   }
-}
+} */
 
 .contact__list_svg {
   border-radius: 50%;
-  
-  background: #FDFF61;
+
+  background: #fdff61;
 }
 
 .contact__list_svg:hover {
@@ -115,17 +93,15 @@ header {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
- margin-left: auto;
-  /* margin-right: 48px; */
+    margin-left: auto;
+    /* margin-right: 48px; */
   }
-  
 }
 
 .contact_list {
   display: flex;
   gap: 18px;
 }
-
 
 .burger_button {
   width: 28px;
@@ -134,5 +110,16 @@ header {
   @media screen and (min-width: 768px) {
     display: none;
   }
-
 }
+
+.boll {
+
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  
+}
+
